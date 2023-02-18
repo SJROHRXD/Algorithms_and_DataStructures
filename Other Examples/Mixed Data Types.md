@@ -110,3 +110,15 @@ In general, parseFloat() is faster than Number() when parsing floating-point num
 However, the performance difference between the two functions is generally small and is unlikely to be a significant bottleneck in most applications. The choice between parseFloat() and Number() should be based on the specific requirements of your application and the types of input you expect to handle.
 
 It's also worth noting that in modern JavaScript engines, many operations related to parsing and converting numbers are highly optimized, and the performance difference between different approaches may be negligible. As always, it's best to benchmark your code to determine which approach is best suited for your specific use case.
+
+## Can you show me a table of the differences: parseFloat, parseInt, Number
+
+Sure, here's a table summarizing the differences between parseFloat(), parseInt(), and Number():
+
+![parseFloat, parseInt, Number](/Other%20Examples/Assets/floatintnumber.png)
+
+As you can see, parseFloat() and Number() are both capable of handling floating-point numbers, while parseInt() only returns integers. parseInt() has the additional option to specify the radix of the input, while parseFloat() and Number() assume decimal input by default.
+
+Another important difference is how the three functions handle invalid input. parseFloat() returns NaN if it encounters a character that cannot be interpreted as part of a number, while parseInt() and Number() return NaN if the entire input string cannot be interpreted as a number.
+
+Finally, Number() can handle input in bases 2 through 36, while parseFloat() and parseInt() are limited to decimal input or input in a specific radix.
