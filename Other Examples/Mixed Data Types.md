@@ -1,6 +1,6 @@
 # Mixed Data Types and Conversion Methods
 
-## if I have an array of mixed data types, numbers represented as both numbers and strings - how would I approach numbers represented as strings if I need to do mathematical operations with every item in the array?
+## If I have an array of mixed data types, numbers represented as both numbers and strings - how would I approach numbers represented as strings if I need to do mathematical operations with every item in the array?
 
 If you have an array of mixed data types where some of the numbers are represented as strings, you can convert them to numeric data types (e.g., integers or floats) before performing any mathematical operations.
 
@@ -40,7 +40,7 @@ When you need to avoid rounding errors: Floating-point numbers are subject to ro
 
 In general, it's important to choose the right representation for your data based on the requirements of your application. While floating-point numbers are a versatile and useful tool in many cases, they are not always the best choice, and other representations may be more appropriate in some situations.
 
-## so why did you use parseFloat instead of parseInt in your example?
+## So why did you use parseFloat instead of parseInt in your example?
 
 I used parseFloat() instead of parseInt() in the example because some of the numbers in the mixed data type array had fractional parts represented as strings. parseInt() is used to convert a string to an integer, which means it will truncate any fractional part of the number. In contrast, parseFloat() is used to convert a string to a floating-point number, which allows for decimal places.
 
