@@ -32,6 +32,6 @@
 
 1. Understand the Problem
 2. Explore Concrete Examples
-3. Break It Down
+3. Break it Down
 4. Solve or Simplify
 5. Look Back and Refactor
